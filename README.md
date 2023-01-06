@@ -1,5 +1,7 @@
 ### Hi there 👋
+I'm Sam  
 
+[![My Skills](https://skillicons.dev/icons?i=py,docker,mongodb,flask,fastapi,linux,js,html,css,)](https://skillicons.dev)
 <!--
 **dangvansam98/dangvansam98** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
