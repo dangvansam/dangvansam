@@ -1,78 +1,160 @@
-# DANG VAN SAM
+**DANG VAN SAM**  
 **AI Engineer**
 
-[LinkedIn](https://linkedin.com/in/dangvansam) | [GitHub](https://github.com/dangvansam) | Phone: 0968012687 | Email: dangvansam98@gmail.com
+Linkedin: [https://linkedin.com/in/dangvansam](https://linkedin.com/in/dangvansam)  
+Github: [https://github.com/dangvansam](https://github.com/dangvansam)  
+Phone: [0968012687](tel://0968012687) | Email: [dangvansam98@gmail.com](mailto:dangvansam98@gmail.com)
 
 ---
 
-### SUMMARY
+**SUMMARY**
 
-With 4 years of experience as an AI Engineer, I specialize in developing and optimizing speech-related models, including speech recognition, synthesis (TTS), emotion detection, and speaker verification. I'm also proficient in NLP (sentiment analysis, named entity recognition, language detection) and computer vision (facial verification, OCR). Recently, I’ve focused on LLM-driven chatbots and Retrieval-Augmented Generation (RAG) systems, leveraging advanced architectures for intelligent assistants. Additionally, I have extensive experience deploying scalable AI models in production, integrating them seamlessly into diverse applications.
-
----
-
-### TECHNICAL SKILLS
-
-| Category | Skills |
-|---|---|
-| **Programming Languages** | Python, Javascript, HTML, CSS, jQuery, Bash |
-| **ML/DL Frameworks** | PyTorch, Tensorflow, ONNX, TensorRT |
-| **Databases** | MySQL, MongoDB, SQLServer, PostgreSQL |
-| **LLM/Agent** | LangChain, LangGraph, Langflow, Langfuse, Transformers, AutoGen, CrewAI, Agno, Dify, R2R |
-| **Tools & Others** | Docker, K8s, Linux, Git, CI/CD, OpenCV, Kafka, Redis, RapidMQ, Flask, FastAPI, Celery, SocketIO, Websocket, TensorRT LLM, NVIDIA Triton Inference Server, AWS, GPC, AI CallCenter, SIP Trunk, Livekit, Livekit Agent |
+AI Engineer with 4+ years of specialized experience in speech technologies (ASR, TTS, Voice Cloning, VAD, Speaker Verification) and conversational AI systems. Expert in building and optimizing streaming LLM-powered agents, real-time voicebots, and low-latency production pipelines. Proven track record deploying AI solutions across call centers, educational platforms, and enterprise applications with advanced NLP capabilities (RAG, sentiment analysis, NER) on cloud-native infrastructure.
 
 ---
 
-### PROFESSIONAL EXPERIENCE
+**TECHNICAL SKILLS**
 
-#### [Techainer](https://techainer.com/) (10/2023 – Present)
-
-**Project: GKEbook Chatbot & Mobi Tutor** (04/2024 – Present)
-- **Position:** Backend Developer, AI Engineer
-- **Description:** Built an AI-powered virtual assistant for an e-book platform and mobile learning app to assist students with homework solutions.
-- **Technologies:** LLMs (GPT-4o, Llama, Gemma), LangChain, LangGraph, Langflow, LangFuse, FastAPI, Docker, Kubernetes, Azure Cloud.
-
-**Project: MOOC Chatbot** (04/2024 – Present)
-- **Position:** Backend Developer, AI Engineer
-- **Description:** Built a chatbot for a MOOC platform to answer FAQs, provide course information, and solve exercises.
-- **Technologies:** LLMs (Llama 3.1, Gemma 2), RAG, MySQL, Celery, WebSocket.
-
-**Project: Voicebot for Call Center System (Vietnamobile)** (02/2024 – 04/2024)
-- **Position:** AI Engineer
-- **Description:** Developed a voicebot system for call-in and call-out scenarios. Optimized STT, TTS, and LLM models for real-time dialogue.
-- **Technologies:** LiveKit, STT, TTS, VAD, LLM, Transformer.
-- **Open Source:** [VietTTS](https://github.com/dangvansam/viet-tts)
-
-**Project: Chatbot – Information Query System for the Ministry of Education Portal** (10/2023 – 01/2024)
-- **Position:** AI Engineer
-- **Description:** Built and optimized a RAG system to query over 10,000 documents from the Ministry of Education's portal.
-- **Technologies:** LLM, RAG.
+- **Languages:** Python, JavaScript, Bash, SQL
+- **ML/DL Frameworks:** PyTorch, TensorFlow, ONNX, TensorRT
+- **Databases:** PostgreSQL, MySQL, MongoDB, SQLServer
+- **LLM:** Fine-tuning, RLHF, Quantization, Prompt Engineering, RAG, vLLM, TensorRT-LLM
+- **LLM/Agent Frameworks:** LangChain, LangGraph, LangFuse, AutoGen, CrewAI, Dify, R2R, Haystack, Livekit Agents,...
+- **Infrastructure:** Docker, Kubernetes, Linux, Git, CI/CD, Argo
+- **Messaging & Caching:** Kafka, Redis, RabbitMQ, Celery
+- **Frameworks:** FastAPI, Flask, SocketIO, WebSocket
+- **Deep Learning:** ASR, TTS, VAD, Speaker Verification, Voice Cloning, Turn Detection, NLP, Computer Vision, OCR
+- **Web:** React, Node.js, HTML, CSS, Bootstrap, Tailwind
+- **Deployment:** NVIDIA Triton Inference Server, TensorRT-LLM, AWS, GCP, Azure, Raspberry Pi
 
 ---
 
-#### [VCCorp](https://vccorp.vn/) (09/2021– 10/2023)
+**EDUCATION**
 
-**Project: Automatic Speech Recognition (Speech to text)** (06/2021 – 10/2023)
-- **Position:** Backend Developer & AI Engineer
-- **Description:** Researched and developed a Vietnamese speech recognition model for transcribing meetings and call center conversations.
-- **Technologies:** Transformer, Conformer, CTC, Transducer, HuBert, Wav2vec2, WavLM.
-- **Open Source:** [VietASR](https://github.com/dangvansam/viet-asr)
-
-**Project: VoiceID – Speaker Verification** (05/2023 – 06/2023)
-- **Position:** Backend Developer & AI Engineer
-- **Description:** Built a speaker identification system to automatically identify users during calls.
-- **Technologies:** Speaker Embedding, WebSocket.
+- **Military Technical Academy (MTA)**, 2016 – 2022  
+  Bachelor's Degree in Information Technology
 
 ---
 
-### EDUCATION
+**AWARDS**
 
-**Military Technical Academy (MTA)** (2016 – 2022)
-- Bachelor's Degree in Information Technology
+- **2nd Place** – VLSP 2022 (9th International Workshop on Vietnamese Language)
+- **3rd Place** – VLSP 2021 (8th International Workshop on Vietnamese Language)
 
 ---
 
-### CERTIFICATES AND AWARDS
+**PROFESSIONAL EXPERIENCE**
 
-- **Ranked Second** - The 9th International Workshop on Vietnamese Language - VLSP 2022
-- **Ranked Third** - The 9th International Workshop on Vietnamese Language - VLSP 2021
+### PREP | AI Engineer, Backend Developer
+*06/2025 – Present | Team size: 5*
+
+**Project: Virtual Classroom for English & Chinese Speaking Practice (IELTS, TOEIC, HSK)**
+- Designed and deployed a conversational streaming AI agent for English/Chinese speaking practice, supporting both scripted and user-defined scenarios.
+- Optimized VAD for improved speech detection and implemented LLM-based turn detection model for accurate end-of-turn recognition.
+- Built backend services to log user interactions and AI-driven classroom events.
+- **Tech Stack:** GPT-4.1, LLaMA3, Livekit, FastAPI, LangChain, TensorRT-LLM, Triton, Postgres, Redis, React, Supabase, AWS S3, Kubernetes, Argo CD.
+
+---
+
+### GGroup | AI Engineer, Backend Developer
+*06/2025 – Present | Team size: 5*
+
+**Project: AI-Powered Call Center (Vietnamese Conversational AI)**
+- Developed a real-time AI call center system handling inbound, outbound, and telesales conversations.
+- Built low-latency pipelines combining STT, TTS, intent recognition, and conversational logic.
+- Integrated telephony infrastructure with SIP Trunk and Stringee API for production call handling.
+- Designed data storage and retrieval systems for customer information, loan applications, and upselling workflows.
+- **Tech Stack:** Self-hosted STT/TTS, Livekit, FastAPI, Postgres, Redis, Kafka, SIP Trunk, AWS S3, Cloudflare.
+
+---
+
+### Techainer | AI Engineer, Backend Developer  
+*10/2023 – 05/2025 | Team size: 8*
+
+**Project: GKEbook Chatbot & Mobi Tutor**
+- Built LLM-powered tutors (GPT-4o, LLaMA, Gemma, Qwen) to assist students with step-by-step learning support across text, audio, and image inputs.
+- Implemented multimodal question answering using VLMs (Qwen VL) for image-based queries.
+- **Tech Stack:** GPT-4o, LLaMA, Gemma, Qwen VL, LangChain, LangGraph, LangFuse, FastAPI, Postgres, pgvector, Docker, Kubernetes.
+
+**Project: MOOC Chatbot**
+- Implemented LLM chatbot (Gemma 2, Qwen2.5 14B) for FAQ answering, course scheduling, and study reminders.
+- Integrated agentic RAG on MySQL to extract and respond to user queries about course materials, exams, and study schedules.
+- **Tech Stack:** Gemma 2, Qwen2.5 14B, LangChain, LangGraph, FastAPI, MySQL, Celery, WebSocket, Kubernetes.
+
+**Project: Voicebot for Vietnamobile Call Center**
+- Designed and deployed real-time Vietnamese voicebot with STT, TTS, VAD, and LLM.
+- Fine-tuned expressive TTS and voice cloning models; open-sourced [VietTTS](https://github.com/dangvansam/viet-tts).
+- **Tech Stack:** Self-hosted STT/TTS/VAD, Livekit, FastAPI, LangChain.
+
+**Project: MOET Portal Chatbot (Education)**
+- Built RAG system over 10,000+ documents (web pages, Word, Excel, PDFs).
+- Delivered scalable information query assistant for educational data.
+- **Tech Stack:** Gemini, Vertex AI, LangChain, FastAPI, Weaviate, Selenium, BeautifulSoup, Docker.
+
+---
+
+### VCCorp | AI Engineer, Backend Developer  
+*06/2021 – 10/2023 | Team size: 3–8*
+
+**Project: Vietnamese ASR System**
+- Researched and developed speech recognition models (Transformer, Conformer, HuBERT, WavLM); ranked 2nd in VLSP Vietnamese speech processing competition.
+- Integrated into call centers and meeting transcription applications.
+- Open-sourced [VietASR](https://github.com/dangvansam/viet-asr).
+- **Tech Stack:** PyTorch, FastAPI, WebSocket, ONNX, Triton Inference Server, Docker.
+
+**Project: VoiceID – Speaker Verification**
+- Built speaker identification system using embeddings for real-time call authentication.
+- **Tech Stack:** PyTorch, FastAPI, WebSocket, Postgres, Docker.
+
+**Project: VoiceBot – Population Data Management**
+- Built voice assistant for querying personal identification information.
+- Integrated STT, TTS, and NLP for natural voice interactions.
+- **Tech Stack:** PyTorch, FastAPI, WebSocket, SIP, Docker.
+
+**Project: Text Sentiment Analysis**
+- Developed sentiment classification system using BERT and T5 models (95% accuracy).
+- **Tech Stack:** PyTorch, Transformers, BERT, T5, FastAPI.
+
+**Project: Speech Synthesis (TTS)**
+- Built speech synthesis models (FastSpeech, Tacotron2, VITS) for natural voice generation.
+- Deployed services via FastAPI for production applications.
+- **Tech Stack:** PyTorch, FastAPI, Docker.
+
+---
+
+### ToanphuongSHLX | Developer (Freelancer)  
+*09/2021 – 12/2021 | Team size: 3*
+
+**Project: Driving Training Tracking System**
+- Developed system for monitoring driver speed, location, and facial verification.
+- Optimized for Raspberry Pi with on-device AI inference.
+- **Tech Stack:** FaceNet, OpenCV, Python, Raspberry Pi.
+
+---
+
+### ThaisonSoft | AI Engineer (Intern, Part-time)  
+*02/2018 – 05/2021 | Team size: 2*
+
+**Project: ASR & TTS Research**
+- Researched Vietnamese ASR, TTS, denoising, and diarization models.
+- **Tech Stack:** PyTorch, TensorFlow, Flask.
+
+**Project: Invoice OCR System**
+- Developed OCR system to extract structured data from invoices.
+- Implemented image preprocessing with OpenCV for improved accuracy.
+- **Tech Stack:** PyTorch, TensorFlow, OpenCV, Flask.
+
+---
+
+**NON-PROFIT PROJECTS**
+
+### EASY-COMM | Communication Platform for the Hearing Impaired
+*12/2024 – Present | Social Impact Project*
+
+- Developed AI-powered platform to support communication for hearing-impaired individuals.
+- Implemented speech-to-sign language conversion using AI models for real-time translation.
+- Built sign language-to-speech system enabling bidirectional communication.
+- **Tech Stack:** PyTorch, Computer Vision, NLP, ASR, TTS, MediaPipe, OpenCV, FastAPI, React.
+
+---
+
