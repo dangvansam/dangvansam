@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Van Sam - AI Engineer</title>
+    <style>
+        :root {
+            --primary-color: #00aaff;
+            --secondary-color: #0d1117;
+            --text-color: #c9d1d9;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --header-text: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: var(--header-text);
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+
+        section {
+            padding: 40px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        section:first-of-type {
+            border-top: none;
+        }
+
+        h2.section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--header-text);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        h2.section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 8px auto 0;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Skills Section */
+        #skills .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        #skills .skill-category {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        #skills h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #skills li {
+            background: rgba(0, 170, 255, 0.1);
+            color: var(--text-color);
+            padding: 8px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+
+        /* Experience Section */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: var(--border-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            right: -8px;
+            background-color: var(--secondary-color);
+            border: 3px solid var(--primary-color);
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .right::after {
+            left: -8px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .timeline-content h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .timeline-content .company {
+            font-weight: bold;
+            color: var(--header-text);
+        }
+
+        .timeline-content .date {
+            font-size: 0.9em;
+            color: #8b949e;
+            margin-bottom: 10px;
+        }
+
+        .timeline-content .tags {
+            margin-top: 15px;
+        }
+
+        .timeline-content .tag {
+            background: rgba(0, 170, 255, 0.1);
+            color: var(--text-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        /* Education & Awards */
+        .edu-awards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        .edu-awards-grid h3 {
+            color: var(--primary-color);
+        }
+        .edu-awards-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Contact Section */
+        #contact .contact-info {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        #contact a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 60px;
+                padding-right: 15px;
+            }
+            .timeline-item.left, .timeline-item.right {
+                left: 0;
+            }
+            .timeline-item::after {
+                left: 12px;
+            }
+            .edu-awards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>DANG VAN SAM</h1>
+            <h2>AI Engineer</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/dangvansam" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/dangvansam" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                With 4 years of experience as an AI Engineer, I specialize in developing and optimizing speech-related models, including speech recognition, synthesis (TTS), emotion detection, and speaker verification. I'm also proficient in NLP and computer vision. Recently, I’ve focused on LLM-driven chatbots and Retrieval-Augmented Generation (RAG) systems, leveraging advanced architectures for intelligent assistants. I have extensive experience deploying scalable AI models in production, integrating them seamlessly into diverse applications.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>ML/DL & LLM/Agent</h3>
+                    <ul>
+                        <li>PyTorch</li><li>Tensorflow</li><li>ONNX</li><li>TensorRT</li>
+                        <li>LangChain</li><li>LangGraph</li><li>Langflow</li><li>Langfuse</li>
+                        <li>Transformers</li><li>AutoGen</li><li>CrewAI</li><li>R2R</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Databases</h3>
+                    <ul>
+                        <li>Python</li><li>Javascript</li><li>HTML/CSS</li><li>Bash</li>
+                        <li>MySQL</li><li>MongoDB</li><li>PostgreSQL</li><li>SQLServer</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Deployment</h3>
+                     <ul>
+                        <li>Docker</li><li>Kubernetes</li><li>Linux</li><li>Git & CI/CD</li>
+                        <li>AWS</li><li>GPC</li><li>NVIDIA Triton</li><li>TensorRT LLM</li>
+                        <li>Flask</li><li>FastAPI</li><li>Celery</li><li>Kafka</li><li>Redis</li>
+                        <li>SocketIO</li><li>Websocket</li><li>Livekit</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>GKEbook Chatbot & Mobi Tutor</h3>
+                        <div class="company">Techainer</div>
+                        <div class="date">04/2024 – Present</div>
+                        <p>Built an AI-powered virtual assistant for an e-book platform to provide students with step-by-step homework solutions. Integrated LLMs (GPT-4o, Llama, Gemma) for adaptive tutoring and deployed on Azure using Docker & K8s.</p>
+                        <div class="tags">
+                            <span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">LLM</span>
+                            <span class="tag">FastAPI</span><span class="tag">WebSocket</span><span class="tag">Docker</span><span class="tag">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>MOOC Chatbot</h3>
+                        <div class="company">Techainer</div>
+                        <div class="date">04/2024 – Present</div>
+                        <p>Developed a chatbot for a MOOC platform to answer FAQs, provide course info, and solve exercises. Utilized LLMs (Llama 3.1, Gemma 2) with a RAG system on a MySQL database and built a full admin system for management.</p>
+                        <div class="tags">
+                            <span class="tag">RAG</span><span class="tag">Llama 3.1</span><span class="tag">Gemma 2</span>
+                            <span class="tag">MySQL</span><span class="tag">Celery</span><span class="tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Voicebot for Call Center System</h3>
+                        <div class="company">Techainer</div>
+                        <div class="date">02/2024 – 04/2024</div>
+                        <p>Developed a voicebot for call-in/out scenarios, integrating with LiveKit. Optimized STT, TTS, and LLM models for low-latency, real-time dialogue. Fine-tuned a high-quality TTS model and open-sourced it.</p>
+                        <div class="tags">
+                            <span class="tag">Voicebot</span><span class="tag">STT/TTS</span><span class="tag">Livekit</span><span class="tag">Transformer</span>
+                            <span class="tag">Python</span><span class="tag"><a href="https://github.com/dangvansam/viet-tts" style="color: var(--primary-color);">VietTTS (Open Source)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Automatic Speech Recognition (ASR)</h3>
+                        <div class="company">VCCorp</div>
+                        <div class="date">06/2021 – 10/2023</div>
+                        <p>Researched and developed a high-accuracy Vietnamese ASR model using Transformer, Conformer, and Wav2vec2. Deployed it for meeting transcriptions and call center analysis. Open-sourced the model and demo.</p>
+                         <div class="tags">
+                            <span class="tag">ASR</span><span class="tag">Conformer</span><span class="tag">Wav2vec2</span><span class="tag">Deep Learning</span>
+                            <span class="tag"><a href="https://github.com/dangvansam/viet-asr" style="color: var(--primary-color);">VietASR (Open Source)</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>VoiceID – Speaker Verification</h3>
+                        <div class="company">VCCorp</div>
+                        <div class="date">05/2023 – 06/2023</div>
+                        <p>Built a speaker identification system using speaker embedding models to automatically identify users during calls, integrated in real-time via a WebSocket server.</p>
+                         <div class="tags">
+                            <span class="tag">Speaker Verification</span><span class="tag">AI Security</span><span class="tag">WebSocket</span><span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Text Sentiment Analysis</h3>
+                        <div class="company">VCCorp</div>
+                        <div class="date">02/2023 – 04/2023</div>
+                        <p>Developed a deep learning model (BERT, T5) to classify user comments and reviews with 95% accuracy. Deployed the model as a web application using Flask.</p>
+                         <div class="tags">
+                            <span class="tag">Sentiment Analysis</span><span class="tag">BERT</span><span class="tag">T5</span><span class="tag">NLP</span><span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Drive Tracking (Freelance)</h3>
+                        <div class="company">ToanphuongSHLX</div>
+                        <div class="date">09/2021 – 12/2021</div>
+                        <p>Developed a driver tracking system, capturing speed, location, and driver's face for verification using a FaceNet model optimized to run on a Raspberry Pi.</p>
+                        <div class="tags">
+                            <span class="tag">Computer Vision</span><span class="tag">FaceNet</span><span class="tag">Raspberry Pi</span><span class="tag">Edge AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education-awards">
+            <h2 class="section-title">Education & Awards</h2>
+            <div class="edu-awards-grid">
+                <div class="edu-awards-item">
+                    <h3>Education</h3>
+                    <p><strong>Bachelor's Degree in Information Technology</strong><br>
+                    Military Technical Academy (MTA)<br>
+                    2016 – 2022</p>
+                </div>
+                <div class="edu-awards-item">
+                    <h3>Certificates and Awards</h3>
+                    <p><strong>Ranked Second</strong><br>
+                    The 9th International Workshop on Vietnamese Language - VLSP 2022</p>
+                    <p><strong>Ranked Third</strong><br>
+                    The 9th International Workshop on Vietnamese Language - VLSP 2021</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p>Feel free to reach out to me for collaborations or opportunities.</p>
+                <p>Email: <a href="mailto:dangvansam98@gmail.com">dangvansam98@gmail.com</a></p>
+                <p>Phone: <a href="tel://0968012687">0968012687</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Dang Van Sam. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
